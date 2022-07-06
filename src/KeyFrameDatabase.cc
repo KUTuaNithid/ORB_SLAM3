@@ -610,6 +610,7 @@ void KeyFrameDatabase::DetectNBestCandidates(KeyFrame *pKF, vector<KeyFrame*> &v
 {
     list<KeyFrame*> lKFsSharingWords;
     set<KeyFrame*> spConnectedKF;
+    cout << "DetectNBestCandidates\n";
 
     // Search all keyframes that share a word with current frame
     {
@@ -742,6 +743,7 @@ void KeyFrameDatabase::DetectNBestCandidates(KeyFrame *pKF, vector<KeyFrame*> &v
 vector<KeyFrame*> KeyFrameDatabase::DetectRelocalizationCandidates(Frame *F, Map* pMap)
 {
     list<KeyFrame*> lKFsSharingWords;
+    cout << "DetectRelocalizationCandidates\n";
 
     // Search all keyframes that share a word with current frame
     {
